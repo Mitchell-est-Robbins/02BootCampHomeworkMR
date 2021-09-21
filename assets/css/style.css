@@ -13,7 +13,8 @@ body{
 /*============
 top box, font and background
 ==============*/
-header {
+
+#theheader /*not to be confused with the element header */{
     display: inline-flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -87,56 +88,105 @@ h2{
 
 }
 /*=============
-about me row
+meat and potatoes
 =================*/
-.row1{
-    background-color:grey;
+
+.contentsidebar{
     display:flex;
-    width:100%;
-    border: yellow 1px solid;
-
+    flex-wrap:wrap;
+    background:yellow;
 }
 
-h3{
-    justify-content: flex-start;
-    padding: 0px 50px 0px 50px;
-    font-size: 200%;
-    background-color:crimson;
-    border-right: solid 10px black;   
+.sidebar{
+    flex: 1 1 30%;
+    background:red;
 }
 
-.box{
-    margin-left: 50px;
-    justify-content: flex-end;
-}
-
-.text{
-    
-    color:red;
-    font-size: 150%;
-       
-}
-
-p{
-    padding: 0;
-    margin: 0;
-}
-/*===============
-row with the picture
-==================*/
-
-.row2{
+#aboutme{
     display: flex;
-    background-color:darkcyan;
-    border: white 1px solid;
-    width: 100%;
+    justify-content: flex-end;
+    border:white 1px solid;
+    font-size: 150%;
 }
 
-h4{
+#mywork{
+    display: flex;
+    justify-content: flex-end;
+    border:white 1px solid;
+    font-size: 150%;
+}
+
+#contactme{
+    display: flex;
+    justify-content: flex-end;
+    border:white 1px solid;
+    font-size: 150%;
+}
+
+/* ==================
+The content
+=============== */
+
+/* the text */
+.content{
+    flex: 1 1 70%;
+    background:cyan;
+    min-width: 25ch;
+}
+
+#mybodycard{
+    width: 90%;
+    border:white dotted 2px;
+    max-width: 400px;
+}
+
+.mybody {
+    background:blue
+}
+/* the pictures  */
+
+.card{
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10%;
+    flex: 0 0 400px;
     justify-content: flex-start;
-    padding: 0px 50px 0px 50px;
-    font-size: 200%;
-    background-color:crimson;
-    border-right: solid 10px black;  
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.cardheader{
+    border: black solid 1px;
+    background: cadetblue;
+    width: 10%;
+    position: relative;
+    margin-right: -100px;
+
+}
+#mainpic{
+    margin: 10px 0 10px 13%;
+    max-block-size: 400px;
+
     
+
+}
+
+/* =====================
+footer 
+================== */
+footer {
+    display: flex;
+    background-color: darkblue;
+    justify-content: space-around;
+}
+
+.footerbits{
+    
+    align-items: center;
+    margin: 0 20px 0 0;
+    border:white solid 3px;
+    background:red;
 }
