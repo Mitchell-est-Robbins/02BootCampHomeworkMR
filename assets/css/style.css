@@ -67,7 +67,7 @@ making that jumbo work
     width: 100%;
     margin-bottom: 25px;
     z-index: 0;
-    background-size: cover;
+    background-size:cover;
     background-position: center;
     background-color: cyan;
     background-image:url("../images/jumbotron.jpg");
@@ -158,22 +158,67 @@ The content
     align-items: flex-start;
 }
 
-.cardheader{
+#maincard{
+    padding: 50px;
+    min-height: 200px;
+    min-width: 200px;
+    background-image: url(../images/test2.png);
+    background-size:cover;
+    background-position: center;
+    background-color:chocolate;
+}
+/* .cardheader{
     border: black solid 1px;
     background: cadetblue;
     width: 10%;
     position: relative;
     margin-right: -100px;
 
-}
+} */
+/* 
 #mainpic{
     margin: 10px 0 10px 13%;
     max-block-size: 400px;
 
-    
+} */
 
+.minicard{
+    margin:5px;
+    padding: 50px;
+    min-height: 50px;
+    min-width: 50px;
+    background-image: url(../images/test2.png);
+    background-size:cover;
+    background-position: center;
+    background-color:chocolate;
 }
 
+.minicardheader{
+    position: relative;
+    right: 40%;
+    padding: 10px;
+    background: white;
+    z-index: 6;
+}
+/* 
+#minicard{
+    padding: 50px;
+    min-height: 50px;
+    min-width: 50px;
+    background-image: url(../images/test2.png);
+    background-size:cover;
+    background-position: center;
+    background-color:chocolate;
+}
+#minicardheader{
+   padding: 10px;
+   background: white;
+   z-index: 6;
+} */
+
+/* .minicard{
+    display:flex
+} */
 /* =====================
 footer 
 ================== */
