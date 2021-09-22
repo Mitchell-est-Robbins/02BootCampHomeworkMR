@@ -13,10 +13,11 @@
     --silverchalice: #a58f6e;
     --spanishgrey: #caba9e;
     --wine:#66114d;
+    --white:#ffff;
   }
 
 body{
-    background: rgb(0,0,0);
+    background:var(--darkliver);
     font-family:'IM Fell English', serif;
     font-size: medium;
 }
@@ -73,14 +74,15 @@ li {
 making that jumbo work
 ======================*/
 #jumbotron {
-    height: 500px;
+    height: 300px;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     z-index: 0;
     background-size:cover;
     background-position: center;
     background-color: cyan;
-    background-image:url("../images/jumbotron.jpg");
+    background-image:url("../images/skullbones.jpg");
+    
    
 }
 /*=====================
@@ -88,15 +90,15 @@ text in the jumbotron
 ======================*/
 h2{
     
-    font-size: 200%;
+    font-size: 130%;
     float: right;
     z-index: 1;
     padding: 5px;
     margin-top: -100px;
     margin-right: 40px;
     border: black 2px solid;
-    background-color: rgb(182, 9, 44);
-    color:seashell;
+    background-color: var(--spanishgrey)
+    color:var(var(--darkliver));
 
 }
 /*=============
@@ -111,7 +113,7 @@ meat and potatoes
 
 .sidebar{
     flex: 1 1 30%;
-    background: var(--spanishgrey);
+    background: var(--silverchalice);
     border-right: 4px var(--darkliver) solid;
 }
 
@@ -127,7 +129,7 @@ meat and potatoes
 
 #mywork{
     margin-right:15%;
-    margin-top: 25%;
+    margin-top: 69%;
     display: flex;
     justify-content: flex-end;
     /* border:white 1px solid; */
@@ -151,18 +153,19 @@ The content
 /* the text */
 .content{
     flex: 1 1 70%;
-    background:cyan;
+    background:var(--spanishgrey);
     min-width: 25ch;
 }
 
 #mybodycard{
     width: 90%;
-    border:white dotted 2px;
+    /* border:white dotted 2px; */
     max-width: 400px;
 }
 
 .mybody {
-    background:blue
+    color: var(--darkliver);
+    background:var(--spanishgrey)
 }
 /* the pictures  */
 
