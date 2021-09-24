@@ -123,7 +123,7 @@ meat and potatoes
     display: flex;
     justify-content: flex-end;
     /* border:white 1px solid; */
-    font-size: 150%;
+    font-size: 180%;
     color:var(--darkliver);
 }
 
@@ -134,7 +134,7 @@ meat and potatoes
     justify-content: flex-end;
     /* border:white 1px solid; */
     color:var(--darkliver);
-    font-size: 150%;
+    font-size: 180%;
 }
 
 #contactme{
@@ -142,7 +142,7 @@ meat and potatoes
     display: flex;
     justify-content: flex-end;
     /* border:white 1px solid; */
-    font-size: 150%;
+    font-size: 180%;
     Color:var(--darkliver);
 }
 
@@ -177,15 +177,12 @@ The content
 
 .card{
     display: flex;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
     padding: 10px 10px 10px 10%;
     flex: 0 0 400px;
     justify-content: flex-start;
     align-content: center;
     flex-wrap: wrap;
-    align-items: flex-start;
+    
 }
 
 #maincard{
@@ -202,7 +199,7 @@ The content
     font-size: 145%;
     position: relative;
     width: 100px;
-    right: 10px;
+    right: 15%;
     padding: 10px;
     background: var(--spanishgrey);
     color: var(--darkliver);
@@ -239,25 +236,35 @@ footer
 ================== */
 footer {
     display: flex;
-    background-color: darkblue;
-    justify-content: space-around;
+    margin-top: 6%;
+    background-color: var(--silverchalice);
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .footerbits{
     
     align-items: center;
-    margin: 0 20px 0 0;
-    border:white solid 3px;
-    background:red;
+    margin: 0 25px 0 0;
+    padding: 5px;
+    border:var(--darkliver) solid 3px;
+    background:var(--spanishgrey);
+    color:var(--darkliver);
 }
 
 /* ========================
 EFFECTS=
 /* ================== */
+
+
+
 .minicardheader:hover{
   box-shadow: inset 0px 0px 10px rgb(255, 62, 62), 0 0 15px rgb(32, 12, 12);
 } 
-.minicard:hover{
+
+.minicard:hover, 
+.minicardheader:hover .minicard:active{
     width: 150px;
     height: 150px;
     background-color: rgb(255,62,62);
@@ -265,6 +272,18 @@ EFFECTS=
     box-shadow: 0px 0px 30px 30px rgb(32, 12, 12);
 }
 
+.maincardheader:hover{
+    box-shadow: inset 0px 0px 10px rgb(255, 62, 62), 0 0 15px rgb(32, 12, 12);
+  } 
+  
+  #maincard:hover, 
+  .maincardheader:hover #maincard:active{
+      width: 150px;
+      height: 150px;
+      background-color: rgb(255,62,62);
+      
+      box-shadow: 0px 0px 30px 30px rgb(32, 12, 12);
+  }
 @media screen and (max-width: 768px) {
     header {
       flex-direction: column;
@@ -272,6 +291,7 @@ EFFECTS=
   
     main {
       max-width: 1200px;
+      min-width: 450px;
     }
   }
   
