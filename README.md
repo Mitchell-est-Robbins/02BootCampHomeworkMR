@@ -12,14 +12,13 @@ Artistic liberty was taken with the content, going more for the theme unity than
 [My deployed link](https://vookmirvookmir.github.io/02BootCampHomeworkMR/)
 
 ![target layout](assets\Screencapture.png)
-```
 
 
 
 
 
 
-```
+
 
 
 
