@@ -189,7 +189,7 @@ The content
     padding: 50px;
     min-height: 250px;
     min-width: 80%;
-    background-image: url(../images/engine.jpg);
+    background-image: url(../images/main1.png);
     background-size:cover;
     background-position: center;
     background-color:chocolate;
@@ -212,7 +212,7 @@ The content
     padding: 50px;
     min-height: 50px;
     min-width: 45%;
-    background-image: url(../images/skullbones1.png);
+    /* background-image: url(../images/skullbones1.png); */
     background-size:cover;
     background-position: center;
     background-color:chocolate;
@@ -304,7 +304,21 @@ li:hover {
   }
   
 
-
+/* .main1{
+    background-image: url(../images/main1.png) ;
+} */
+.m1{
+    background-image: url(../images/mini1.png) ;
+}
+.m2{
+    background-image: url(../images/mini2.png) ;
+}
+.m3{
+    background-image: url(../images/mini3.jpg);
+}
+.m4{
+    background-image: url(../images/mini4.png) ;
+}
 
 /* .code-card .card-header {
   border-radius: 8px;
